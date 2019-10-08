@@ -1,10 +1,10 @@
-// Skeleton program for the Client
+// A Java program for a Client
 import java.net.*;
 import java.io.*;
 
 public class Client
 {
-	// initialize socket and input output streams
+    // initialize socket and input output streams
     private Socket socket            = null;
     private DataInputStream  input   = null;
     private DataOutputStream out     = null;
@@ -61,11 +61,10 @@ public class Client
         {
             System.out.println(i);
         }
-    
-}
+    }
 
     public static void main(String args[])
     {
         Client client = new Client("127.0.0.1", 5000);
     }
-
+}
